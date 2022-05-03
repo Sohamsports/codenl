@@ -1,12 +1,12 @@
-experiment no.6:
+experiment no.6: ns2 with data tranfer through udp protocol
 
 set ns [new Simulator]
 
 $ns color 1 Blu
+$ns namtrace-all $nf
 $ns color 2 Red
 
 set nf [open out.nam w]
-$ns namtrace-all $nf
 
 proc finish {} {
 global ns nf
