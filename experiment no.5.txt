@@ -1,4 +1,5 @@
 EXPERIMENT NO.5:
+To implement graphical simulation in ns2 with data transfer tcp ptotocol.
 
 set ns [new Simulator]
 
