@@ -1,5 +1,6 @@
 EXPERIMENT NO.8
-
+To implement socket programming with JAV Tcp server.
+ 
 TCP SERVER:
 
 import java.io.*;
