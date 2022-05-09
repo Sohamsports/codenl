@@ -1,0 +1,26 @@
+import numpy as np 
+import pandas as pd
+import matplotlib.pylab as plt
+%matplotlib inline
+
+import cv2 
+from google.colab.patches import cv2_imshow
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+a=cv2.imread('/content/drive/MyDrive/Colab Notebooks/lena.jpg')
+print(a.shape)
+px=a[65,65]  #read pixel BGR formatin open cv
+print(px)
+#cv2_imshow(a)
+print(a[0:5,0:6]) #read row and column pixwel
+cv2_imshow(a)
+
+img =cv2.imread('/content/drive/MyDrive/Colab Notebooks/cameraman.jpg')
+plt.imshow(img);
+
+img1 =cv2.imread('/content/drive/MyDrive/Colab Notebooks/lena.jpg')
+painting2 = img1.copy()
+painting2[:,:,:] =244
+plt.imshow(painting2);
